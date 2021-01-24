@@ -1,0 +1,411 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<meta name="description" content="Wireframe C856"/>
+	<meta name="viewport" conent="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+<script type="text/javascript">
+
+	var beachList = ["Sunset Beach", "Plage Valava", "Surf Beach Paradise", "La Plage de Maui", "Plage de la Pointe Venus"];
+	var monthList = ["May", "June", "July", "August", "September", "October", "November", "December", "January", "Febuary", "March", "April"];
+
+	function leftSelectorBeaches() {
+
+		var currentBeach = document.getElementById("beaches").innerHTML;
+
+
+		for (i = beachList.length; i >= 0; i--) {
+			if (beachList[i] == currentBeach) {
+
+				if (i == 0) {
+					document.getElementById("beaches").innerHTML = beachList[(beachList.length - 1)];
+					break;
+				} else {
+					document.getElementById("beaches").innerHTML = beachList[i-1];
+					break;
+				}
+
+			}
+		}
+	}
+
+	function leftSelectorMonths() {
+
+		var currentMonth = document.getElementById("months").innerHTML;
+
+
+		for (i = monthList.length; i >= 0; i--) {
+			if (monthList[i] == currentMonth) {
+
+				if (i == 0) {
+					document.getElementById("months").innerHTML = monthList[(monthList.length - 1)];
+					break;
+				} else {
+					document.getElementById("months").innerHTML = monthList[i-1];
+					break;
+				}
+
+			}
+		}
+	}
+
+	function rightSelectorBeaches() {
+
+		var currentBeach = document.getElementById("beaches").innerHTML;
+
+
+		for (i = 0; i < beachList.length; i++) {
+			if (beachList[i] == currentBeach) {
+				if (i == (beachList.length - 1)) {
+					document.getElementById("beaches").innerHTML = beachList[0];
+					break;
+				} else {
+					document.getElementById("beaches").innerHTML = beachList[i+1];
+					break;
+				}
+
+			}
+		}
+	}
+
+	function rightSelectorMonths() {
+
+		var currentMonth = document.getElementById("months").innerHTML;
+
+
+		for (i = 0; i < monthList.length; i++) {
+			if (monthList[i] == currentMonth) {
+				if (i == (monthList.length - 1)) {
+					document.getElementById("months").innerHTML = monthList[0];
+					break;
+				} else {
+					document.getElementById("months").innerHTML = monthList[i+1];
+					break;
+				}
+
+			}
+		}
+	}
+
+</script>
+
+</head>
+	<body>
+
+		<header>
+			<div class="link_box">
+				<nav>
+					<ul class="link_flex_container_left">
+						<li class="dropdown"><a class="dropbtn">Stay<br/> and<br/> Experience</a>
+							<div class="dropdownContent">
+								<a href="Tahiti_WebPage_UX_Design_Prototype_v2_Activities.html">Activities</a>
+								<a href="Tahiti_WebPage_UX_Design_Prototype_v2_Accomidations.html">Accommodations</a>
+								<a >Beaches</a>
+								<a >Volcanoes <br/> and Mountains</a>
+								<a >Events</a>
+								<a >Culture</a>
+							</div>
+						</li>
+						<li class="dropdown"><a class="dropbtn">Plan<br/> your<br/> Trip</a>
+							<div class="dropdownContent">
+								<a >Itenerary Planner</a>
+								<a >Travel</a>
+							</div>
+						</li>
+					</ul>
+
+
+
+					<ul class="link_flex_container_right">
+						<input id="search" placeholder="Search"><br/>
+						<li><a href="Tahiti_WebPage_UX_Design_Prototype_v2.html">Home</a></li>
+						<li class="dropdown"><a class="dropbtn" >About</a></li>
+						<li class="dropdown"><a class="dropbtn" target="_blank" href="https://www.facebook.com/Tahitidotcom/">Find us at<br/> #Tahiti</a></li>
+					</ul>
+				</nav>
+			</div>	
+
+					<div id="logo">
+						<div id="innerlogo">
+							<a href="Tahiti_WebPage_UX_Design_Prototype_v2.html"><h1>Tahiti</h1></a>
+							<p>Largest Island of French Polynesia</p>
+						</div>
+					</div>
+
+				<div id="hamburger">
+					<img src="hamburger.png"/>
+
+					<div id="hamContent">
+						<ul>
+							<li><a href="">Stay and Experience</a></li>
+								<ul>
+									<li><a href="Tahiti_WebPage_UX_Design_Prototype_v2_Activities.html">Activities</a></li>
+									<li><a href="Tahiti_WebPage_UX_Design_Prototype_v2_Accomidations.html">Accommodations</a></li>
+									<li><a >Beaches</a></li>
+									<li><a >Volcanoes <br/> and Mountains</a></li>
+									<li><a >Events</a></li>
+									<li><a >Culture</a></li>
+								</ul>
+							<li><a >Plan your Trip</a></li>
+								<ul>
+									<li><a >Itenerary Planner</a></li>
+									<li><a >Travel</a></li>
+								</ul>
+							<li ><a href="Tahiti_WebPage_UX_Design_Prototype_v2.html">Home</a></li>
+							<li><a >About</a></li>
+							<li><a target="_blank" href="https://www.facebook.com/Tahitidotcom/">Find Us at #Tahiti</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+		</header>
+
+		<main>
+
+			<div class="vidcontainer">
+				<video id="backgroundvideo" width="100%" autoplay="autoplay" loop="loop" muted="muted">
+					<!-- <source src="Pexels Videos 1757800.mp4" type="video/mp4"/> -->
+					Sorry but your browser does not support HTML5.
+				</video>
+			</div>
+
+				<div id="hoverpoint1">
+					<img src="images/plusmarker.png" />
+					<span id="hoverpointtext1">Tahiti's Volcanoes Click to Learn More</span>
+				</div>	
+
+				<div id="hoverpoint2">
+					<img src="images/plusmarker.png" />
+					<span id="hoverpointtext2">Tahiti's Beaches Click to Learn More</span>
+				</div>
+
+				<div id="hoverpoint3">
+					<img src="images/plusmarker.png" />
+					<span id="hoverpointtext3">Tahiti's Ocean Life Click to Learn More</span>
+				</div>
+
+				<div id="hoverpoint4">
+					<img src="images/plusmarker.png" />
+					<span id="hoverpointtext4">Tahiti's Culture Click to Learn More</span>
+				</div>
+
+			<div id="scroll_img">
+				<img src="images/scroll-arrow-simple.gif"/>
+			</div>
+
+			<div class="container2">
+
+				<div>
+
+					<div class="textbox">
+						<div class="breakerbox1">
+							<a href=""><div class="Learnmore_button">Learn more...</div></a></div>
+						<div class="titlebox1"><h2>Beaches</h2></div>
+						<img id="pictype1" src="images/300x300-placeholder.png"/>
+						<div id="texttype1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+						<div class="mobileFriendlyText">
+							<details >
+								<summary>Read More...</summary>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+								<br/>
+
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</details>
+						</div>
+
+						<div id="selector_box"><img onclick="leftSelectorBeaches()" id="selector_arrow_title_left" src="images/left-arrow-simple.png" /><h3 id="beaches">Plage de la Pointe Venus</h3><img onclick="rightSelectorBeaches()" id="selector_arrow_title_right" src="images/right-arrow-simple.png" /></div>
+
+						<!--
+							Sunset Beach
+							Plage Valava
+							Surf Beach Paradise
+							La Plage de Maui
+						-->
+
+					</div>
+
+					<div class="partition"></div>
+
+					<div class="textbox">
+						<div class="breakerbox2"><a href=""><div class="Learnmore_button">Learn more...</div></a></div>
+						<div class="titlebox2"><h2>Volcanoes and Mountains</h2></div>
+						<img id="pictype2" src="images/300x300-placeholder.png" />
+						<div id="texttype2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+					</div>
+
+						<div class="mobileFriendlyText">
+							<details >
+								<summary>Read More...</summary>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+								<br/>
+
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</details>
+						</div>
+
+					<div class="partition"></div>
+
+					<div class="textbox">
+						<div class="breakerbox1"><a href=""><div class="Learnmore_button">Learn more...</div></a></div>
+						<div class="titlebox1"><h2>Events</h2></div>
+						<img id="pictype1" src="images/300x300-placeholder.png" />
+						<div id="texttype1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+						<div class="mobileFriendlyText">
+							<details >
+								<summary>Read More...</summary>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+								<br/>
+
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</details>
+						</div>
+						
+						<div id="selector_box"><img onclick="leftSelectorMonths()" id="selector_arrow_title_left" src="images/left-arrow-simple.png" /><h3 id="months">April</h3><img onclick="rightSelectorMonths()" id="selector_arrow_title_right" src="images/right-arrow-simple.png" /></div>
+						
+						<!--
+							May
+							June
+							July
+							August
+							September
+							October
+							November
+							December
+							January
+							Febuary
+							March
+							April
+						-->
+
+					</div>
+
+						<div class="partition"></div>
+
+					<div class="textbox">
+						<div class="breakerbox2"><a href=""><div class="Learnmore_button">Learn more...</div></a></div>
+						<div class="titlebox2"><h2>Culture</h2></div>
+						<img id="pictype2" src="images/300x300-placeholder.png" />
+						<div id="texttype2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+						<div class="mobileFriendlyText">
+							<details >
+								<summary>Read More...</summary>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+								<br/>
+
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</details>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</main>
+
+		<div class="titleBreaker"></div>
+
+		<footer>
+			<div id="footCol1">
+				<h3>Tahiti</h3>
+				<h4>Contact Us</h4>
+				<p>Tahiti.mail@email.com<br/></p>
+				<p>1234 Governor Bldg.<br/>
+					Tahiti, Franch Polynesia<br/>
+					12345<br/></p>
+					<p>M - F: 7AM - 4PM<br/>
+					Tel: +0 (123) 123 - 4567</p>
+			</div>
+
+			<div id="footCol2">
+				<hr/>
+				<h4><a href="Tahiti_WebPage_UX_Design_Prototype_v2_Accomidations.html">Accommodations</a></h4>
+				<hr/>
+				<ul>
+					<li><a href="Tahiti_WebPage_UX_Design_Prototype_v2_Accomidations.html">Resorts</a></li>
+					<li><a>Hotels</a></li>
+					<li><a>Hostels</a></li>
+					<li><a>Public Listings</a></li>
+				</ul>
+				<hr/>
+				<h4><a href="Tahiti_WebPage_UX_Design_Prototype_v2_Activities.html">Activities</a></h4>
+				<hr/>
+				<ul>
+					<li><a href="Tahiti_WebPage_UX_Design_Prototype_v2_Activities.html">Hiking</a></li>
+					<li><a >Snorkeling</a></li>
+					<li><a >Dancing</a></li>
+					<li><a >Surfing</a></li>
+					<li><a >Wind-Sailing</a></li>
+					<li><a >Fishing</a></li>
+					<li><a >Many More</a></li>
+				</ul>
+				<hr/>
+
+			</div>
+
+			<div id="footCol4">
+
+				<hr/>
+				<h4><a >Beaches</a></h4>
+				<hr/>
+					<ul>
+						<li><a >Plage de la Pointe Venus</a></li>
+						<li><a >Sunset Beach</a></li>
+						<li><a >Plage Valava</a></li>
+						<li><a >Surf Beach Paradise</a></li>
+						<li><a >La Plage de Maui</a></li>
+					</ul>
+				<hr/>
+
+				<h4><a >Volcanoes<br/> and Mountains</a></h4>
+
+				<hr/>
+
+				<h4><a >Events</a></h4>
+
+				<hr/>
+
+
+				<h4><a >Culture</a></h4>
+				<hr/>
+
+
+			</div>
+
+			<div id="footCol3">
+				<hr/>				
+				<h4><a href="Tahiti_WebPage_UX_Design_Prototype_v2.html">Home</a></h4>
+				<hr/>
+				<input id="search2" placeholder="Search"/>
+				<hr/>
+				<h4><a href="">About</a></h4>
+				<hr/>
+
+
+				<h4><a target="_blank" href="">#Tahiti</a></h4>
+				<hr/>
+					<ul>
+						<li><a target="_blank" href="">Facebook</a></li>
+						<li><a >Twitter</a></li>
+						<li><a >Instagram</a></li>
+						<li><a >Youtube</a></li>
+					</ul>
+
+				<hr/>
+
+			</div>
+
+			<div id="copyright">
+				<h5 style="color: green;">Website Created By:   &copy; Nicholas Koldys - for WGU C856</h5>
+				<h5>Background Beach Scene Video by Engin Akyurt from Pexels : <a href="https://www.pexels.com/video/waves-rushing-to-the-shore-1757800/">https://www.pexels.com/video/waves-rushing-to-the-shore-1757800/</a></h5>
+			</div>
+		</footer>
+	</body>
+</html>

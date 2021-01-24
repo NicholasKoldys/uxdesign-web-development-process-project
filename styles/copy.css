@@ -1,0 +1,81 @@
+#home_divider {
+	margin: 2%;
+	padding: 2%;
+	background-color: white;
+}
+
+#home_divider .category_box {
+	padding: 2%;
+}
+
+#home_divider .category_box .pic_left_text_right {
+	width: 100%;
+}
+
+#home_divider .category_box .pic_left_text_right > * {
+	display: inline-block;
+	width: 45%;
+
+}
+
+#home_divider .category_box .pic_left_text_right .text_container {
+	width: 50%;
+}
+
+#home_divider .category_box .pic_left_text_right .pic_container img {
+	width: 100%;
+	min-height: 348px;
+	min-width: 348px;
+}
+
+#home_divider .category_box .pic_left_text_right .text_container #varied_pics {
+	width: 100%;
+}
+
+#home_divider .category_box .pic_left_text_right .text_container #varied_pics > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#home_divider .category_box .pic_left_text_right .text_container #varied_pics img {
+	width: 30%;
+	min-width: 25px;
+}
+
+#home_divider .category_box .pic_left_text_right .text_container #selector_box {
+	width: 100%;
+}
+
+#home_divider .category_box .pic_left_text_right .text_container #selector_box > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#home_divider .category_box .pic_left_text_right .text_container #selector_box h2{
+	width: 60%;
+	min-width: 100px;
+	text-align: center;
+}
+
+#home_divider .category_box .pic_left_text_right .text_container #selector_box img {
+	width: 7%;
+	min-width: 25px;
+}
+
+#home_divider .category_box .pic_left_text_right .text_container p {
+	padding: 1%;
+	font-size: 16pt;
+	min-width: 350px;
+	max-height: 250px;
+	overflow: auto;
+
+}
+
+#home_divider .category_box #learn_more {
+	border: 5px #ddf7ff solid;
+	width: 20%;
+	text-align: center;
+	padding: 10px;
+	margin: 2%;
+}
+
